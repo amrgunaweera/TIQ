@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 33.234">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-0.029" y1="-157.384" x2="0.845" y2="-156.646" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00b4db"/>
+      <stop offset="1" stop-color="#0083b0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.501" y1="-490.405" x2="0.501" y2="-488.381" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#38ef7d"/>
+      <stop offset="0.217" stop-color="#32e280"/>
+      <stop offset="0.618" stop-color="#22bf86"/>
+      <stop offset="1" stop-color="#11998e"/>
+    </linearGradient>
+  </defs>
+  <g id="logo" transform="translate(-464.8 -333.183)">
+    <g id="XMLID_102_" transform="translate(464.8 333.183)">
+      <path id="XMLID_11_" class="cls-1" d="M492.573,351.223a3.727,3.727,0,0,1-2.969-4.4l.383-1.947a9.778,9.778,0,0,0-7.5-11.491,9.614,9.614,0,0,0-11.4,7.757,9.788,9.788,0,0,0,7.916,11.2l1.947.383a3.727,3.727,0,0,1,2.969,4.4,7.757,7.757,0,0,0,5.969,9.129,7.618,7.618,0,0,0,8.97-6.1A7.807,7.807,0,0,0,492.573,351.223Z" transform="translate(-468.984 -333.183)"/>
+      <circle id="XMLID_12_" class="cls-2" cx="5.363" cy="5.363" r="5.363" transform="translate(0 22.509)"/>
+    </g>
+  </g>
+</svg>

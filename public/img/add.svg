@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="add" transform="translate(0 -0.001)">
+    <g id="Group_30" data-name="Group 30" transform="translate(0 0.001)">
+      <path id="Path_16" data-name="Path 16" class="cls-1" d="M13.24,6.024H7.977V.761A.944.944,0,0,0,7,0a.944.944,0,0,0-.977.76V6.024H.76A.944.944,0,0,0,0,7a.944.944,0,0,0,.76.977H6.023v5.264A.944.944,0,0,0,7,14a.944.944,0,0,0,.977-.76V7.978H13.24A.944.944,0,0,0,14,7,.944.944,0,0,0,13.24,6.024Z" transform="translate(0 -0.001)"/>
+    </g>
+  </g>
+</svg>

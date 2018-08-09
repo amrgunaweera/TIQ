@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- css files -->
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+
+    <title>Physiotherapy Clinic</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="js/modernizr.js"></script>
+</head>
+<body ng-app="appMain">
+
+<a class="navbar-brand" href="#"><img src="img/logo.svg"></a>
+
+<nav class="top-navigation navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item notifications">
+                <a class="nav-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.818 24" class="notify-icon">
+                        <g id="notification" transform="translate(-23.272)">
+                            <g id="Group_21" data-name="Group 21" transform="translate(23.272)">
+                                <path id="Path_12" data-name="Path 12" class="cls-1" d="M44,17.455H42.908V8.727a8.727,8.727,0,1,0-17.455,0v8.727H24.363a1.091,1.091,0,0,0,0,2.182h5.455a4.364,4.364,0,0,0,8.727,0H44a1.091,1.091,0,1,0,0-2.182Zm-9.818,4.364A2.184,2.184,0,0,1,32,19.636h4.364A2.184,2.184,0,0,1,34.181,21.818Zm6.545-4.364H27.636V8.727a6.545,6.545,0,1,1,13.091,0Z" transform="translate(-23.272)"/>
+                            </g>
+                        </g>
+                    </svg>
+
+                    <span class="d-lg-none d-xl-none">Notificaations</span>
+
+                    <span class="badge badge-primary notify-count">3</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown profile">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="pic">
+                        <img src="img/pic-2.jpg">
+                    </div>
+                    <div class="details">
+                        <div class="name">Hugh Jackman</div>
+                        <div class="role">Front Desk</div>
+                    </div>
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">My Profile</a>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="nav-section">
+
+    </div>
+
+
+</nav> <!--top navigations ends-->
+
+<div class="main-navigation">
+    <ul>
+        <li>
+            <a href="" class="active" data-toggle="tooltip" data-placement="right" title="Home">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24.607">
+                    <g id="hospital" transform="translate(0 -0.003)">
+                        <g id="Group_7" data-name="Group 7" transform="translate(0 0.003)">
+                            <g id="Group_6" data-name="Group 6" transform="translate(0 0)">
+                                <path id="Path_4" data-name="Path 4" class="nav-icons" d="M23.707,11.582,12.707.3a.982.982,0,0,0-1.414,0l-11,11.278a1.043,1.043,0,0,0,0,1.45.982.982,0,0,0,1.414,0l.293-.3v8.8A3.042,3.042,0,0,0,5,24.61H19a3.042,3.042,0,0,0,3-3.076v-8.8l.293.3a.982.982,0,0,0,1.414,0A1.043,1.043,0,0,0,23.707,11.582ZM20,21.534a1.013,1.013,0,0,1-1,1.025H5a1.013,1.013,0,0,1-1-1.025V10.681l8-8.2,8,8.2Z" transform="translate(0 -0.003)"/>
+                            </g>
+                        </g>
+                        <g id="Group_9" data-name="Group 9" transform="translate(7 8.995)">
+                            <g id="Group_8" data-name="Group 8">
+                                <path id="Path_5" data-name="Path 5" class="nav-icons" d="M158.34,191.2h-3v-3.076a1,1,0,1,0-2,0V191.2h-3a1.026,1.026,0,0,0,0,2.051h3v3.076a1,1,0,1,0,2,0v-3.076h3a1.026,1.026,0,0,0,0-2.051Z" transform="translate(-149.34 -187.102)"/>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+
+            </a>
+        </li>
+        <li>
+            <a href="" data-toggle="tooltip" data-placement="right" title="Physiotherapists">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 23.98">
+                    <g id="stethoscope_1_" data-name="stethoscope (1)" transform="translate(0 -0.213)">
+                        <g id="Group_10" data-name="Group 10" transform="translate(0 0.213)">
+                            <path id="Path_6" data-name="Path 6" class="nav-icons" d="M24,11.2a3,3,0,1,0-3.981,2.819.963.963,0,0,0-.036.179v4a4,4,0,0,1-4,4h-3a4,4,0,0,1-4-4,1.023,1.023,0,0,0-.031-.156,3.735,3.735,0,0,0,1.461-.736l.91-.76a12.957,12.957,0,0,0,4.654-9.959V5.209a3,3,0,0,0-3-3H12.01v-1a1,1,0,0,0-2,0v1.9a.828.828,0,0,0-.02.1.827.827,0,0,0,.02.1v1.9a1,1,0,1,0,2,0v-1h.979a1,1,0,0,1,1,1V6.588a10.968,10.968,0,0,1-3.937,8.426l-.909.758a1.81,1.81,0,0,1-2.261,0l-.916-.757A10.961,10.961,0,0,1,2,6.588V5.209a1,1,0,0,1,1-1H4.017v1a1,1,0,0,0,2,0v-4a1,1,0,0,0-2,0v1H3a3,3,0,0,0-3,3V6.591a12.963,12.963,0,0,0,4.689,9.961l.915.755a3.754,3.754,0,0,0,1.423.726.981.981,0,0,0-.033.165,6,6,0,0,0,5.995,5.995h3A6,6,0,0,0,21.982,18.2v-4a.962.962,0,0,0-.034-.168A2.99,2.99,0,0,0,24,11.2Zm-3,1a1,1,0,1,1,1-1A1,1,0,0,1,21,12.2Z" transform="translate(0 -0.213)"/>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="" data-toggle="tooltip" data-placement="right" title="Patients">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 22.847">
+                    <g id="wheelchair_1_" data-name="wheelchair (1)" transform="translate(0 -12.297)">
+                        <g id="Group_12" data-name="Group 12" transform="translate(0 12.297)">
+                            <g id="Group_11" data-name="Group 11" transform="translate(0 0)">
+                                <path id="Path_7" data-name="Path 7" class="nav-icons" d="M20.862,28.868c-.017,0-.032.005-.049.005l-1.393-3.883a1,1,0,0,0-.943-.664H16.518a7.968,7.968,0,0,0-1.481-2.4V17.31a1,1,0,0,0-1-1H5.013V13.3a1,1,0,0,0-1-1H1A1,1,0,1,0,1,14.3h2v7.873A7.928,7.928,0,1,0,17.063,27.2a7.826,7.826,0,0,0-.053-.872h.762l1.157,3.222a3.12,3.12,0,1,0,1.934-.686ZM5.013,18.312h8.02v2a7.865,7.865,0,0,0-8.02.133V18.312Zm4.12,14.817A5.925,5.925,0,1,1,15.058,27.2,5.931,5.931,0,0,1,9.133,33.129Zm11.729.01a1.133,1.133,0,1,1,1.133-1.133A1.134,1.134,0,0,1,20.862,33.139Z" transform="translate(0 -12.297)"/>
+                            </g>
+                        </g>
+                        <g id="Group_14" data-name="Group 14" transform="translate(5.263 23.335)">
+                            <g id="Group_13" data-name="Group 13">
+                                <path id="Path_8" data-name="Path 8" class="nav-icons" d="M116.151,247.766a3.87,3.87,0,1,0,3.87,3.87A3.873,3.873,0,0,0,116.151,247.766Zm0,5.734a1.865,1.865,0,1,1,1.865-1.865A1.867,1.867,0,0,1,116.151,253.5Z" transform="translate(-112.281 -247.766)"/>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+
+            </a>
+        </li>
+        <li>
+            <a href="" data-toggle="tooltip" data-placement="right" title="Reports">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 24">
+                    <g id="clipboard" transform="translate(-53.334)">
+                        <g id="Group_16" data-name="Group 16" transform="translate(57.334 10)">
+                            <g id="Group_15" data-name="Group 15">
+                                <path id="Path_9" data-name="Path 9" class="nav-icons" d="M148.667,213.333h-9a1,1,0,0,0,0,2h9a1,1,0,1,0,0-2Z" transform="translate(-138.667 -213.333)"/>
+                            </g>
+                        </g>
+                        <g id="Group_18" data-name="Group 18" transform="translate(57.334 15)">
+                            <g id="Group_17" data-name="Group 17">
+                                <path id="Path_10" data-name="Path 10" class="nav-icons" d="M148.667,320h-9a1,1,0,1,0,0,2h9a1,1,0,1,0,0-2Z" transform="translate(-138.667 -320)"/>
+                            </g>
+                        </g>
+                        <g id="Group_20" data-name="Group 20" transform="translate(53.334)">
+                            <g id="Group_19" data-name="Group 19">
+                                <path id="Path_11" data-name="Path 11" class="nav-icons" d="M69.334,3H68.283a3.494,3.494,0,0,0-3.449-3h-4a3.494,3.494,0,0,0-3.449,3H56.334a3,3,0,0,0-3,3V21a3,3,0,0,0,3,3h13a3,3,0,0,0,3-3V6A3,3,0,0,0,69.334,3Zm-8.5-1h4a1.5,1.5,0,0,1,0,3h-4a1.5,1.5,0,0,1,0-3Zm9.5,19a1,1,0,0,1-1,1h-13a1,1,0,0,1-1-1V6a1,1,0,0,1,1-1h1.351a3.5,3.5,0,0,0,3.149,2h4a3.5,3.5,0,0,0,3.149-2h1.351a1,1,0,0,1,1,1V21Z" transform="translate(-53.334)"/>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+
+            </a>
+        </li>
+        <li>
+            <a href="" class="settings" data-toggle="tooltip" data-placement="right" title="Settings">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 23.888">
+                    <g id="settings" transform="translate(0 -1.196)">
+                        <g id="Group_24" data-name="Group 24" transform="translate(6.993 8.198)">
+                            <g id="Group_23" data-name="Group 23">
+                                <path id="Path_13" data-name="Path 13" class="icon" d="M154.184,150.569a5,5,0,1,0,5,5A5.008,5.008,0,0,0,154.184,150.569Zm0,8a3,3,0,1,1,3-3A3,3,0,0,1,154.184,158.572Z" transform="translate(-149.182 -150.569)"/>
+                            </g>
+                        </g>
+                        <g id="Group_26" data-name="Group 26" transform="translate(0 1.196)">
+                            <g id="Group_25" data-name="Group 25" transform="translate(0 0)">
+                                <path id="Path_14" data-name="Path 14" class="icon" d="M23.142,10.211,20.3,9.753,22,7.492a1,1,0,0,0-.087-1.3L19.069,3.3a1,1,0,0,0-1.312-.1L15.433,4.839l-.45-2.8A1,1,0,0,0,14,1.2h-4A1,1,0,0,0,9,2.054L8.536,4.89,6.224,3.2a1,1,0,0,0-1.3.1L2.095,6.119A1,1,0,0,0,2,7.43L3.66,9.75l-2.8.4A1,1,0,0,0,0,11.14v4a1,1,0,0,0,.858.988l2.844.458L2,18.849a1,1,0,0,0,.092,1.31L4.925,22.99a1,1,0,0,0,1.31.092l2.319-1.658.4,2.8a1,1,0,0,0,.99.858h4a1,1,0,0,0,.99-.855l.458-2.844,2.261,1.7a1,1,0,0,0,1.31-.092L21.8,20.162a1,1,0,0,0,.092-1.31L20.2,16.536l2.911-.34A1,1,0,0,0,24,15.2v-4A1,1,0,0,0,23.142,10.211ZM22,14.311l-2.042.238a1.964,1.964,0,0,0-1.6,1.237,2.009,2.009,0,0,0,.227,2.007l1.178,1.566-1.6,1.6-1.573-1.183a1.968,1.968,0,0,0-1.938-.246,1.991,1.991,0,0,0-1.3,1.609l-.276,1.942H10.813l-.277-1.93A1.961,1.961,0,0,0,9.3,19.559a2.01,2.01,0,0,0-2.008.226L5.725,20.963l-1.6-1.6,1.184-1.573a1.972,1.972,0,0,0,.246-1.938,1.99,1.99,0,0,0-1.61-1.3L2,14.274V12.007l1.931-.277a1.962,1.962,0,0,0,1.595-1.237A2.011,2.011,0,0,0,5.3,8.486L4.124,6.921l1.608-1.6L7.349,6.5a2.062,2.062,0,0,0,3.235-1.363L10.861,3.2h2.282l.31,1.929a1.963,1.963,0,0,0,1.238,1.6,2.01,2.01,0,0,0,2-.225L18.258,5.33l1.626,1.647L18.7,8.554a2.063,2.063,0,0,0,1.363,3.236L22,12.067v2.244Z" transform="translate(0 -1.196)"/>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <div class="">
+
+    </div>
+</div> <!--main navigation ends-->
+
+<div class="dashbaord">
+    <div class="content container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-titles mb-4">Dashboard</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                <div class="row no-gutters highlights">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="sections panels mr-0 mr-sm-2 mr-lg-2 mb-4">
+                            <div class="heading">Appointments (Today)</div>
+                            <div class="value">258</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="sections panels mx-0 mx-sm-0 mx-lg-2 mb-4">
+                            <div class="heading">Pending Appointments</div>
+                            <div class="value pending">21</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="sections panels mx-0 mx-sm-0 mr-sm-2 mx-lg-2 mb-4">
+                            <div class="heading">Online Paid</div>
+                            <div class="value">76</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="sections panels ml-0 ml-sm-0 ml-lg-2 mb-4">
+                            <div class="heading">App: (Completed)</div>
+                            <div class="value completed">126</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="appointments panels">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-6 col-lg-8">
+                            <div class="title">Appointments</div>
+                        </div>
+                        <div class="col-sm-8 col-md-6 col-lg-4">
+
+                            <form class="row ml-sm-auto">
+                                    <div class="col-9 col-sm-9">
+                                        <input class="form-control my-2 my-sm-0 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    </div>
+                                    <div class="col-3 col-sm-3">
+                                        <button class="btn btn-success my-2 my-sm-0 add-app btn-custom" type="submit">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" class="add-btn">
+                                                <g id="add" transform="translate(0 -0.001)">
+                                                    <g id="Group_30" data-name="Group 30" transform="translate(0 0.001)">
+                                                        <path id="Path_16" data-name="Path 16" class="cls-1" d="M13.24,6.024H7.977V.761A.944.944,0,0,0,7,0a.944.944,0,0,0-.977.76V6.024H.76A.944.944,0,0,0,0,7a.944.944,0,0,0,.76.977H6.023v5.264A.944.944,0,0,0,7,14a.944.944,0,0,0,.977-.76V7.978H13.24A.944.944,0,0,0,14,7,.944.944,0,0,0,13.24,6.024Z" transform="translate(0 -0.001)"/>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-12 appTable" ng-controller="appointmentCtrl">
+
+                            <ul class="head d-none d-sm-block">
+                                <li>
+                                    <div class="columns">
+                                        Appointment No#
+                                    </div>
+                                    <div class="columns">
+                                        Patient Name
+                                    </div>
+                                    <div class="columns">
+                                        Doctor Name
+                                    </div>
+                                    <div class="columns actions">
+                                        Actions
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="tbl-rows mCustomScrollbar" data-mcs-theme="dark">
+                                <li ng-repeat="ap in appRecords">
+                                    <div class="app-no columns">
+                                        <span class="titles d-block d-sm-none">App: NO# :</span> {{ap.appNo}}
+                                    </div>
+                                    <div class="patient-name columns">
+                                        <span class="titles d-block d-sm-none">Patient Name :</span> {{ap.ptName}}
+                                    </div>
+                                    <div class="doc-name columns">
+                                        <span class="titles d-block d-sm-none">Therapist Name: </span> {{ap.therapist}}
+                                    </div>
+                                    <div class="actions columns mt-3 mt-sm-0">
+                                        <button class="btn btn-success btn-custom app-btn">Call Patient</button>
+                                        <button class="btn btn-info btn-custom app-btn">Re-Schedule</button>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-4">
+                <div class="physiotherapists panels mb-4">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="title">
+                                Physiotherapists
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="list-items mt-3 mCustomScrollbar" data-mcs-theme="dark" ng-controller="therapistCtrl">
+
+                                <a href="" class="item" ng-repeat="th in thRecords">
+                                    <div class="pic">
+                                        <img src="img/{{th.img}}.jpg">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="name">
+                                            {{th.Name}}
+                                        </div>
+                                        <div class="titles">
+                                            {{th.title}}
+                                        </div>
+                                    </div>
+                                    <div class="availability">
+                                        <div class="icon-{{th.available}}" title="{{th.availableTitle}}"></div>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--physiotherapist ends-->
+
+                <div class="patients panels mb-4">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="title">
+                                Patients
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="list-items mt-3 mCustomScrollbar" data-mcs-theme="dark">
+
+                                <div ng-controller="patientCtrl">
+                                    <a href="" ng-repeat="pt in records" class="item">
+                                        <div class="pic">
+                                            <img src="img/{{pt.img}}.jpg">
+                                        </div>
+                                        <div class="desc">
+                                            <div class="name">
+                                                {{pt.Name}}
+                                            </div>
+                                            <div class="details">
+                                                <div class="age">
+                                                    <span>Age</span>: {{pt.age}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="app-no">
+                                            App: No# <span>{{pt.appNo}}</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--patients ends-->
+
+                <div class="remarks panels">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title">
+                                Remarks
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mt-3">
+
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        Dr. S. A. James will be late for 2 hours and notify patients.
+                                    </div>
+                                    <div class="item">
+                                        Dr. A. B. Abey Avaibale on Room No: 12
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--remarks ends-->
+            </div>
+        </div>
+    </div> <!--content ends-->
+</div> <!--Dashboard ends-->
+
+
+<!-- js files -->
+<script src="js/app.min.js"></script>
+
+</body>
+</html>

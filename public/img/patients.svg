@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 22.847">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d2d2d2;
+      }
+    </style>
+  </defs>
+  <g id="wheelchair_1_" data-name="wheelchair (1)" transform="translate(0 -12.297)">
+    <g id="Group_12" data-name="Group 12" transform="translate(0 12.297)">
+      <g id="Group_11" data-name="Group 11" transform="translate(0 0)">
+        <path id="Path_7" data-name="Path 7" class="cls-1" d="M20.862,28.868c-.017,0-.032.005-.049.005l-1.393-3.883a1,1,0,0,0-.943-.664H16.518a7.968,7.968,0,0,0-1.481-2.4V17.31a1,1,0,0,0-1-1H5.013V13.3a1,1,0,0,0-1-1H1A1,1,0,1,0,1,14.3h2v7.873A7.928,7.928,0,1,0,17.063,27.2a7.826,7.826,0,0,0-.053-.872h.762l1.157,3.222a3.12,3.12,0,1,0,1.934-.686ZM5.013,18.312h8.02v2a7.865,7.865,0,0,0-8.02.133V18.312Zm4.12,14.817A5.925,5.925,0,1,1,15.058,27.2,5.931,5.931,0,0,1,9.133,33.129Zm11.729.01a1.133,1.133,0,1,1,1.133-1.133A1.134,1.134,0,0,1,20.862,33.139Z" transform="translate(0 -12.297)"/>
+      </g>
+    </g>
+    <g id="Group_14" data-name="Group 14" transform="translate(5.263 23.335)">
+      <g id="Group_13" data-name="Group 13">
+        <path id="Path_8" data-name="Path 8" class="cls-1" d="M116.151,247.766a3.87,3.87,0,1,0,3.87,3.87A3.873,3.873,0,0,0,116.151,247.766Zm0,5.734a1.865,1.865,0,1,1,1.865-1.865A1.867,1.867,0,0,1,116.151,253.5Z" transform="translate(-112.281 -247.766)"/>
+      </g>
+    </g>
+  </g>
+</svg>

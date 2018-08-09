@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d2d2d2;
+      }
+    </style>
+  </defs>
+  <g id="clipboard" transform="translate(-53.334)">
+    <g id="Group_16" data-name="Group 16" transform="translate(57.334 10)">
+      <g id="Group_15" data-name="Group 15">
+        <path id="Path_9" data-name="Path 9" class="cls-1" d="M148.667,213.333h-9a1,1,0,0,0,0,2h9a1,1,0,1,0,0-2Z" transform="translate(-138.667 -213.333)"/>
+      </g>
+    </g>
+    <g id="Group_18" data-name="Group 18" transform="translate(57.334 15)">
+      <g id="Group_17" data-name="Group 17">
+        <path id="Path_10" data-name="Path 10" class="cls-1" d="M148.667,320h-9a1,1,0,1,0,0,2h9a1,1,0,1,0,0-2Z" transform="translate(-138.667 -320)"/>
+      </g>
+    </g>
+    <g id="Group_20" data-name="Group 20" transform="translate(53.334)">
+      <g id="Group_19" data-name="Group 19">
+        <path id="Path_11" data-name="Path 11" class="cls-1" d="M69.334,3H68.283a3.494,3.494,0,0,0-3.449-3h-4a3.494,3.494,0,0,0-3.449,3H56.334a3,3,0,0,0-3,3V21a3,3,0,0,0,3,3h13a3,3,0,0,0,3-3V6A3,3,0,0,0,69.334,3Zm-8.5-1h4a1.5,1.5,0,0,1,0,3h-4a1.5,1.5,0,0,1,0-3Zm9.5,19a1,1,0,0,1-1,1h-13a1,1,0,0,1-1-1V6a1,1,0,0,1,1-1h1.351a3.5,3.5,0,0,0,3.149,2h4a3.5,3.5,0,0,0,3.149-2h1.351a1,1,0,0,1,1,1V21Z" transform="translate(-53.334)"/>
+      </g>
+    </g>
+  </g>
+</svg>

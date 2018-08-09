@@ -1,0 +1,729 @@
+/*!
+ * app-style
+ * created by mishan
+ */
+
+/* Fonts */
+$primaryfont: 'Montserrat', sans-serif;
+
+/* Colors */
+$bgcolor: #EFF9FB;
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$primaryBlue: #0083B0;
+$secondryBlue: #00B4DB;
+
+$primaryGreen: #11998E;
+$secondryGreen: #38EF7D;
+
+$primaryRed: #ef554f;
+
+$primaryTextColor: #707070;
+
+@mixin linear-gradient($from, $to) {
+  background: $to;
+  background: -moz-linear-gradient(-45deg, $from 0%, $to 100%);
+  /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from), color-stop(100%,$to));*/
+  background: -webkit-linear-gradient(-45deg, $from 0%,$to 100%);
+  /*background: -o-linear-gradient(-45deg, $from 0%,$to 100%);*/
+  background: linear-gradient(135deg, $from 0%,$to 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#{$from}, endColorstr=#{$to})
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin drop-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow:    $shadow;
+  box-shadow:         $shadow;
+}
+
+/* Extends */
+%animate-all {
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+%common-shadow{
+  @include drop-shadow(0px 3px 20px rgba(0, 0, 0, 0.1));
+}
+%common-hover-shadow{
+  @include drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.3));
+}
+
+
+/* Styles */
+
+body{
+  background-color: $bgcolor;
+  font-family: $primaryfont;
+  color: $primaryTextColor;
+
+  .navbar-brand{
+    position: fixed;
+    left: 0;
+    top:0;
+    height: 60px;
+    width: 60px;
+    z-index: 9999;
+    padding: 0.8rem 1rem;
+    background-color: $white;
+
+    img{
+      width: 30px;
+      height: 34px;
+    }
+  }
+
+  .top-navigation{
+    background-color: $white !important;
+    height: 60px;
+    z-index: 9998;
+    @extend %common-shadow;
+
+    @media (min-width: 992px) {
+      z-index: 7000;
+    }
+    @media (max-width: 991.98px) {
+      @include drop-shadow(none);
+    }
+
+    .navbar-toggler{
+      border: none;
+    }
+
+    .navbar-collapse{
+      margin-top: 12px;
+      background-color: $white;
+      padding: 20px;
+      @include drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.1));
+
+      @media (min-width: 992px) {
+        margin-top: 0;
+        padding: 0;
+
+        @include drop-shadow(none);
+      }
+
+      .dropdown-menu{
+        @media (max-width: 991.98px) {
+          border: none;
+        }
+      }
+    }
+
+    .nav-item{
+      padding: 0 5px;
+
+      @media (min-width: 992px) {
+        border-left: solid 1px $gray-200;
+      }
+
+      &.notifications{
+        position: relative;
+        .notify-icon{
+          width: 24px;
+          height: 24px;
+
+          .cls-1{
+            fill: $gray-500;
+          }
+        }
+
+
+        .notify-count{
+          font-size: 12px;
+          background-color: $secondryBlue;
+          @include border-radius(50px);
+
+          @media (min-width: 992px) {
+            position: absolute;
+            top: 0;
+            right: 8px;
+          }
+        }
+      }
+    }
+
+    .profile{
+
+      .pic{
+        width: 30px;
+        height: 30px;
+        float: left;
+
+        img{
+          width: 100%;
+          @include border-radius(20px);
+
+        }
+      }
+      .details{
+        float: left;
+        margin: 0 10px;
+
+        .name{
+          font-size: 14px;
+          line-height: 16px;
+        }
+        .role{
+          font-size: 11px;
+        }
+      }
+
+    }
+  }
+  /* Top Navigation ends */
+
+  .main-navigation{
+    background-color: $white;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    z-index: 8000;
+    @extend %common-shadow;
+
+    @media (min-width: 992px) {
+      width: 60px;
+      height: calc(100vh - 61px);
+      padding-top: 25px;
+    }
+
+    ul{
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+
+      li{
+        display: inline-block;
+        width: 18.5%;
+
+        @media (min-width: 992px) {
+          display: block;
+          width: 100%;
+        }
+        a{
+          width: 100%;
+          display: block;
+          padding: 10px 0;
+          text-align: center;
+
+          @media (min-width: 992px) {
+            width: 60px;
+            height: 45px;
+            margin: 20px auto;
+          }
+
+          &:first-child{
+            margin-top: 0;
+          }
+
+          &.active{
+            border-bottom: solid 2px $secondryBlue;
+
+            @media (min-width: 992px) {
+              border-bottom: none;
+              border-right: solid 2px $secondryBlue;
+            }
+
+            svg{
+              .nav-icons{
+                fill: $primaryBlue;
+              }
+            }
+          }
+
+          svg{
+            width: 24px;
+            height: 24px;
+
+            .nav-icons{
+              fill: $gray-500;
+
+              @extend %animate-all;
+            }
+          }
+
+          &:hover{
+            svg{
+              .nav-icons{
+                fill: $secondryBlue;
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+
+    .settings{
+
+      @media (min-width: 992px) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+        height: 45px;
+        display: block;
+        margin: 15px auto;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      svg{
+        width: 24px;
+        height: 24px;
+
+        .icon{
+          fill: $gray-500;
+          @extend %animate-all;
+        }
+      }
+
+      &:hover{
+        svg{
+          .icon{
+            fill: $secondryBlue;
+          }
+        }
+
+      }
+
+    }
+  }
+  /* Main Navigation ends*/
+
+
+  .dashbaord{
+
+    .content{
+      float: left;
+      padding: 20px;
+      margin-top: 100px;
+
+
+      @media (min-width: 992px) {
+        margin-left: 60px;
+        width: calc(100vw - 78px);
+        margin-top: 60px;
+        padding: 30px;
+      }
+
+      .page-titles{
+        font-weight: 500;
+        font-size: 20px;
+      }
+
+      .panels{
+        background-color: $white;
+        padding: 20px;
+
+        @extend %common-shadow;
+        @extend %animate-all;
+
+        &:hover{
+          @extend %common-hover-shadow;
+        }
+
+        .title{
+          font-weight: 600;
+          font-size: 16px;
+        }
+      }
+
+      .highlights{
+        .sections{
+          padding: 10px;
+
+          .heading{
+            font-size: 12px;
+            font-weight: 500;
+          }
+          .value{
+            font-size: 44px;
+            font-weight: 600;
+            line-height: 44px;
+            color: $primaryBlue;
+
+            &.pending{
+              color: $primaryRed;
+            }
+
+            &.completed{
+              color: $primaryGreen;
+            }
+          }
+        }
+      }
+
+      .appointments{
+        .add-app{
+          line-height: 14px;
+          border: none;
+
+          .add-btn{
+            width: 14px;
+            height: 14px;
+            line-height: 14px;
+
+            .cls-1{
+              fill: $white;
+            }
+          }
+        }
+        .appTable{
+          font-size: 12px;
+          width: 100%;
+
+          &>ul{
+            list-style: none;
+            padding: 0;
+
+            li{
+              display: flex;
+              border-bottom: solid 1px $gray-200;
+              padding: 5px 0;
+            }
+          }
+
+          .head{
+            width: 100%;
+            font-weight: 600
+          }
+
+          .tbl-rows{
+            width: 100%;
+            overflow: auto;
+            max-height: calc(68vh);
+
+            li{
+              flex-direction: column;
+              padding: 20px 0;
+              font-size: 14px;
+              @extend %animate-all;
+
+              @media (min-width: 576px) {
+                flex-direction: row;
+                padding: 5px 0;
+                font-size: 12px;
+              }
+
+              .titles{
+                font-weight: 600;
+              }
+
+              &:hover{
+                background-color: $gray-200;
+                @extend %common-shadow;
+              }
+            }
+          }
+
+          .columns{
+            flex: 1;
+
+            span{
+              float: left;
+            }
+
+            &.actions{
+              flex-grow: 1.1;
+
+              @media (max-width: 767.98px) {
+                flex-grow: 2;
+              }
+            }
+          }
+        }
+
+      }
+
+      .physiotherapists{
+        .list-items{
+          overflow: auto;
+          max-height: calc(27vh);
+
+          .item{
+            width: 100%;
+            float: left;
+            color: $primaryTextColor;
+            padding: 10px;
+            border-bottom: solid 1px $gray-100;
+            @extend %animate-all;
+
+            &:hover{
+              background-color: $gray-100;
+              @extend %common-shadow;
+
+              .pic{
+                margin-left: 5px;
+              }
+            }
+
+            .pic{
+              float: left;
+              margin-right: 10px;
+              width: 40px;
+              @extend %animate-all;
+              img{
+                width: 40px;
+                height: 40px;
+                @include border-radius(50px);
+              }
+            }
+            .desc{
+              float: left;
+              margin-top: 5px;
+              width: calc(100% - 80px);
+              overflow: hidden;
+
+              .name{
+                font-size: 13px;
+                font-weight: 600;
+                line-height: 13px;
+              }
+              .titles{
+                font-size: 10px;
+                font-weight: 500;
+              }
+            }
+            .availability{
+              width: 18px;
+              height: 18px;
+              margin-top: 10px;
+              float: right;
+              text-align: right;
+
+              &>div{
+                text-align: center;
+                color: $white;
+                font-size: 12px;
+                @include border-radius(50px);
+              }
+
+              .icon-available{
+                background-color: $secondryGreen;
+
+                &:after{
+                  color: $white;
+                  content: '✔';
+                }
+
+              }
+              .icon-not-available{
+                background-color: $primaryRed;
+
+                &:after{
+                  color: $white;
+                  content: '✖';
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .patients{
+        .list-items{
+          overflow: auto;
+          max-height: calc(27vh);
+
+          .item{
+            width: 100%;
+            float: left;
+            color: $primaryTextColor;
+            padding: 10px;
+            border-bottom: solid 1px $gray-100;
+            @extend %animate-all;
+
+            &:hover{
+              background-color: $gray-100;
+              @extend %common-shadow;
+
+              .pic{
+                margin-left: 5px;
+              }
+            }
+
+            .pic{
+              float: left;
+              margin-right: 10px;
+              width: 40px;
+              @extend %animate-all;
+              img{
+                width: 40px;
+                height: 40px;
+                @include border-radius(50px);
+              }
+            }
+            .desc{
+              float: left;
+              margin-top: 5px;
+              width: calc(100% - 120px);
+              overflow: hidden;
+
+              .name{
+                font-size: 13px;
+                font-weight: 600;
+                line-height: 13px;
+              }
+              .details{
+                font-size: 10px;
+                font-weight: 500;
+
+                .age{
+                  width: 30%;
+                  float: left;
+                }
+              }
+            }
+            .app-no{
+              width: 50px;
+              float: right;
+              font-size: 10px;
+              text-align: center;
+              line-height: 14px;
+              margin-top: 5px;
+
+              span{
+                font-size: 18px;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+    /*Content ends*/
+
+    .table-custom{
+      font-size: 12px;
+
+      thead{
+        tr{
+          th{
+            border: none;
+          }
+        }
+
+      }
+    }
+  }
+  /*Dashboard ends*/
+
+  .tooltip{
+    .arrow{
+      &:before{
+        border-right-color: $secondryBlue;
+        opacity: 0.9;
+      }
+    }
+    .tooltip-inner{
+      background-color: $secondryBlue;
+      opacity: 0.9;
+    }
+  }
+
+  .form-control{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+
+  .dropdown-menu{
+    font-size: 12px;
+  }
+
+  .btn{
+    height: 30px;
+    line-height: 20px;
+  }
+
+  .btn-custom{
+    border: none;
+    @include drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.1));
+
+    &:hover{
+      @include drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.3));
+    }
+  }
+
+  .app-btn{
+    font-size: 12px;
+    padding: 2px 5px;
+    height: 24px;
+  }
+
+  .btn-success{
+    @include linear-gradient($secondryGreen, $primaryGreen);
+  }
+
+  .btn-info{
+    @include linear-gradient($secondryBlue, $primaryBlue)
+  }
+
+  .owl-carousel{
+    .owl-stage-outer{
+      .owl-stage{
+        .owl-item{
+          font-size: 14px;
+        }
+      }
+    }
+
+    .owl-nav{
+      position: absolute;
+      top: -55px;
+      right: 0;
+
+      button{
+        width: 30px;
+        font-size: 18px !important;
+      }
+
+      .owl-prev{
+
+      }
+      .owl-next{
+
+      }
+    }
+  }
+
+
+}
+
+.mCS-dark.mCSB_scrollTools{
+  .mCSB_dragger{
+    .mCSB_dragger_bar{
+      background-color: $gray-500;
+    }
+  }
+}
+
+.mCSB_dragger_onDrag{
+  .mCSB_dragger_bar{
+    background-color: $primaryBlue !important;
+  }
+}
+
